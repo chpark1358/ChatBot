@@ -22,7 +22,7 @@ from langchain.callbacks import get_openai_callback
 from langchain.memory import StreamlitChatMessageHistory
 
 # OpenAPI Key
-#openai_api_key = st.secrets["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"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 icon_path = r"C:\Users\tech\Downloads\Bear_test.jpg"
 
