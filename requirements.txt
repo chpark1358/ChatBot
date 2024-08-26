@@ -15,3 +15,4 @@ streamlit
 openai
 pandas
 numpy
+markdown
