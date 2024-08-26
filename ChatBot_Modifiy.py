@@ -137,6 +137,7 @@ def get_text_chunks(text):
         chunk_size=900,
         chunk_overlap=100,
         length_function=tiktoken_len
+        keep_separator=True
     )
     chunks = text_splitter.split_documents(text)
     return chunks
