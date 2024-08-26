@@ -16,3 +16,5 @@ openai
 pandas
 numpy
 markdown
+tiktoken
+text_splitter
