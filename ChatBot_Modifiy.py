@@ -11,8 +11,7 @@ from langchain_community.document_loaders import UnstructuredPowerPointLoader
 from langchain_community.document_loaders import TextLoader
 from langchain_community.document_loaders import UnstructuredMarkdownLoader
 
-# from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.text_splitters import RegexTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 
 from langchain.memory import ConversationBufferMemory
@@ -133,8 +132,7 @@ def get_text(note):
 
 
 def get_text_chunks(text):
-    text_splitter = RegexTextSplitter(
-        pattern=r"(#+\s)",
+    text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=900,
         chunk_overlap=100,
         length_function=tiktoken_len
