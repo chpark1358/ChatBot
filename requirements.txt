@@ -10,3 +10,7 @@ pypdf
 loguru
 docx2txt
 transformers
+streamlit
+openai
+pandas
+numpy
