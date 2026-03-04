@@ -1,0 +1,16 @@
+name: supabase-keepalive
+
+on:
+  schedule:
+    - cron: "0 0 */3 * *"   # 3일마다 실행
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping Supabase
+        run: |
+          curl -X GET "https://rkoxmzaaxalentpgygfv.supabase.co/rest/v1/" \
+          -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJrb3htemFheGFsZW50cGd5Z2Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1NDIwNzIsImV4cCI6MjA3NzExODA3Mn0.F-wMPQbh_GSK9hR75maqXNyYb840nI16m2xbAwUkMfM"
