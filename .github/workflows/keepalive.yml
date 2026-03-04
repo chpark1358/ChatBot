@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Ping Supabase
+      - name: Ping Supabase Project 1
         run: |
-          curl -X GET "https://rkoxmzaaxalentpgygfv.supabase.co/rest/v1/" \
-          -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJrb3htemFheGFsZW50cGd5Z2Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1NDIwNzIsImV4cCI6MjA3NzExODA3Mn0.F-wMPQbh_GSK9hR75maqXNyYb840nI16m2xbAwUkMfM"
+          curl -s https://rkoxmzaaxalentpgygfv.supabase.co
+
+      - name: Ping Supabase Project 2
+        run: |
+          curl -s https://daomdiicbhtdjcchemnl.supabase.co
